@@ -1,0 +1,32 @@
+version: '3.8'
+
+networks:
+  default:
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+  
+  backend:
+    image: openjdk:latest
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8080:8080"
+    command: ./mvnw spring-boot:run
+
+  postgres:
+    image: 'ankane/pgvector:v0.5.1'
+    environment:
+      POSTGRES_DB: vector_store
+      POSTGRES_USER: springuser
+      POSTGRES_PASSWORD: springuser
+      PGPASSWORD: springuser
+    ports:
+      - "5432:5432"
