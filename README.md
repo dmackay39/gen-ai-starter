@@ -1,3 +1,6 @@
+# Intro
+When I learn new technologies, I like to make simple projects for future reference! This is one of those projects. The skills I tried to practice here were SpringAI, Docker, React.
+
 # Requirements
 - Docker desktop.
 - OpenAI API key
