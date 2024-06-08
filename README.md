@@ -2,7 +2,7 @@
 When I learn new technologies, I like to make simple projects for future reference! This is one of those projects. The skills I tried to practice here were SpringAI, Docker, React.
 
 # Requirements
-- Docker desktop.
+- [Docker desktop](https://www.docker.com/products/docker-desktop/)
 - OpenAI API key
 
 # How to run with Docker
