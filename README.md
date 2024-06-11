@@ -1,6 +1,13 @@
 # Intro
 When I learn new technologies, I like to make simple projects for future reference! This is one of those projects. The skills I tried to practice here were SpringAI, Docker, React.
 
+In this project:
+- RAG on a pdf file.
+- Function calling using an external API for maths (Newton).
+- Docker for containerisation and pulling a PostGres database image.
+- Frontend with React Bootstrap.
+- Backend with Spring.
+
 # Requirements
 - [Docker desktop](https://www.docker.com/products/docker-desktop/)
 - OpenAI API key
@@ -12,5 +19,4 @@ When I learn new technologies, I like to make simple projects for future referen
 - Open the app on localhost:3000.
 
 # Things to add
-- Function calling example.
 - Sentiment analysis example.
