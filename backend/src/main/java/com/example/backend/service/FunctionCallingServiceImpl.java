@@ -9,6 +9,7 @@ import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class FunctionCallingServiceImpl{
@@ -21,6 +22,6 @@ public class FunctionCallingServiceImpl{
 
     public AssistantMessage callModel(String message) {
         Message userMessage = new UserMessage(message);
-        return chatModel.call(new Prompt(List.of(userMessage), OpenAiChatOptions.builder().withFunction("mathFunction").build())).getResult().getOutput();
+        return chatModel.call(new Prompt(List.of(userMessage), OpenAiChatOptions.builder().withFunctions(Set.of("diffFunction","intFunction")).build())).getResult().getOutput();
     }
 }
