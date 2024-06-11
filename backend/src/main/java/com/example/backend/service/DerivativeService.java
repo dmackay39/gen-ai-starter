@@ -5,7 +5,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.function.Function;
 
-public class MathService implements Function<MathService.Request, MathService.Response> {
+public class DerivativeService implements Function<DerivativeService.Request, DerivativeService.Response> {
 
     @Override
     public Response apply(Request request) {
