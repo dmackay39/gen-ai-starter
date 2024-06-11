@@ -2,7 +2,7 @@
 When I learn new technologies, I like to make simple projects for future reference! This is one of those projects. The skills I tried to practice here were SpringAI, Docker, React.
 
 In this project:
-- RAG on a pdf file.
+- RAG with embedding and vector stores.
 - Function calling using an external API for maths (Newton).
 - Docker for containerisation and pulling a PostGres database image.
 - Frontend with React Bootstrap.
