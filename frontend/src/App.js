@@ -4,7 +4,7 @@ import Footer from './Footer';
 import {Route, Link, Routes } from 'react-router-dom';
 import RAGDisplay from './RAGDisplay';
 import SentADisplay from './SentADisplay';
-import NLQueryDisplay from './NLQueryDisplay';
+import FunctionCallingDisplay from './FunctionCallingDisplay';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
               <Link to="/Sentiment">Sentiment Analysis</Link>
             </li>
             <li>
-              <Link to="/NLQuery">Natural Language Querying</Link>
+              <Link to="/FunctionCalling">Math Function Calling</Link>
             </li>
           </ul>
         </aside>
@@ -30,7 +30,7 @@ function App() {
             <Routes>
               <Route path="/RAG" element={<RAGDisplay />} />
               <Route path="/Sentiment" element={<SentADisplay />} />
-              <Route path="/NLQuery" element={<NLQueryDisplay />} />
+              <Route path="/FunctionCalling" element={<FunctionCallingDisplay />} />
             </Routes>
           </div>
         </div>
