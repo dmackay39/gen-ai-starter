@@ -2,6 +2,7 @@ package com.example.backend.configs;
 
 import com.example.backend.service.DerivativeService;
 import com.example.backend.service.IntegralService;
+import com.example.backend.service.ZeroesService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Description;
@@ -21,5 +22,11 @@ public class Config {
     @Description("Integrate the expression")// function description
     public Function<IntegralService.Request, IntegralService.Response> intFunction() {
         return new IntegralService();
+    }
+
+    @Bean
+    @Description("Find the zeroes of the expression")// function description
+    public Function<ZeroesService.Request, ZeroesService.Response> zeroesFunction() {
+        return new ZeroesService();
     }
 }

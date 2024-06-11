@@ -22,6 +22,6 @@ public class FunctionCallingServiceImpl{
 
     public AssistantMessage callModel(String message) {
         Message userMessage = new UserMessage(message);
-        return chatModel.call(new Prompt(List.of(userMessage), OpenAiChatOptions.builder().withFunctions(Set.of("diffFunction","intFunction")).build())).getResult().getOutput();
+        return chatModel.call(new Prompt(List.of(userMessage), OpenAiChatOptions.builder().withFunctions(Set.of("diffFunction","intFunction","zeroesFunction")).build())).getResult().getOutput();
     }
 }
