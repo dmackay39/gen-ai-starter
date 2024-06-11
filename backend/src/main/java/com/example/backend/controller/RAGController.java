@@ -1,6 +1,6 @@
 package com.example.backend.controller;
 
-import com.example.backend.service.IRAGService;
+import com.example.backend.service.RAGServiceImpl;
 import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RAGController {
 
-    private final IRAGService ragService;
+    private final RAGServiceImpl ragService;
 
-    public RAGController(IRAGService ragService) {
+    public RAGController(RAGServiceImpl ragService) {
         this.ragService = ragService;
     }
 

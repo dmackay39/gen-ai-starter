@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class RAGServiceImpl implements IRAGService{
+public class RAGServiceImpl{
 
     private final OpenAiChatModel chatModel;
     private final VectorStore vectorStore;
@@ -51,7 +51,6 @@ public class RAGServiceImpl implements IRAGService{
         System.out.println(chunks.toString());
     }
 
-    @Override
     public AssistantMessage callModel(String message) {
         SystemPromptTemplate systemPromptTemplate = new SystemPromptTemplate(ragResource);
         List<Document> listOfSimilarDocuments = this.vectorStore.similaritySearch(message);
