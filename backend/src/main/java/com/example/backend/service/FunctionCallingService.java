@@ -12,11 +12,11 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-public class FunctionCallingServiceImpl{
+public class FunctionCallingService {
 
     private final OpenAiChatModel chatModel;
 
-    public FunctionCallingServiceImpl(OpenAiChatModel chatModel) {
+    public FunctionCallingService(OpenAiChatModel chatModel) {
         this.chatModel = chatModel;
     }
 

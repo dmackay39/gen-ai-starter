@@ -36,7 +36,7 @@ const FunctionCallingDisplay = () => {
     <CardGroup>
       <Card>
         <Card.Body>
-          <Card.Title>This AI does maths for you. Ask a question below! eg "Differentiate x^2"</Card.Title>
+          <Card.Title>This AI does maths for you. Ask a question below! Supported functions: Differentiation, Integration, Find the Zeroes. eg "Differentiate x^2"</Card.Title>
           <InputGroup className="mb-3">
             <Form.Control
             placeholder="Your question here"

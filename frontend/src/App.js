@@ -3,7 +3,6 @@ import Header from './Header';
 import Footer from './Footer';
 import {Route, Link, Routes } from 'react-router-dom';
 import RAGDisplay from './RAGDisplay';
-import SentADisplay from './SentADisplay';
 import FunctionCallingDisplay from './FunctionCallingDisplay';
 
 function App() {
@@ -18,9 +17,6 @@ function App() {
               <Link to="/RAG">Retrieval Augmented Generation</Link>
             </li>
             <li>
-              <Link to="/Sentiment">Sentiment Analysis</Link>
-            </li>
-            <li>
               <Link to="/FunctionCalling">Math Function Calling</Link>
             </li>
           </ul>
@@ -29,7 +25,6 @@ function App() {
           <div>
             <Routes>
               <Route path="/RAG" element={<RAGDisplay />} />
-              <Route path="/Sentiment" element={<SentADisplay />} />
               <Route path="/FunctionCalling" element={<FunctionCallingDisplay />} />
             </Routes>
           </div>

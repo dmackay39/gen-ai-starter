@@ -20,12 +20,12 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class RAGServiceImpl{
+public class RAGService {
 
     private final OpenAiChatModel chatModel;
     private final VectorStore vectorStore;
 
-    public RAGServiceImpl(OpenAiChatModel chatModel, VectorStore vectorStore) {
+    public RAGService(OpenAiChatModel chatModel, VectorStore vectorStore) {
         this.chatModel = chatModel;
         this.vectorStore = vectorStore;
     }

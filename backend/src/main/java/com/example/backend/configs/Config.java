@@ -13,19 +13,19 @@ import java.util.function.Function;
 public class Config {
 
     @Bean
-    @Description("Differentiate the expression")// function description
+    @Description("Differentiate the expression")
     public Function<DerivativeService.Request, DerivativeService.Response> diffFunction() {
         return new DerivativeService();
     }
 
     @Bean
-    @Description("Integrate the expression")// function description
+    @Description("Integrate the expression")
     public Function<IntegralService.Request, IntegralService.Response> intFunction() {
         return new IntegralService();
     }
 
     @Bean
-    @Description("Find the zeroes of the expression")// function description
+    @Description("Find the zeroes of the expression")
     public Function<ZeroesService.Request, ZeroesService.Response> zeroesFunction() {
         return new ZeroesService();
     }
