@@ -4,7 +4,7 @@ When I learn new technologies, I like to make simple projects for future referen
 In this project:
 - RAG with embedding and vector stores.
 - Function calling using an external API for maths (Newton).
-- Docker for containerisation and pulling a PostGres database image.
+- Docker for containerisation and pulling a PgVector database image.
 - Frontend with React Bootstrap.
 - Backend with Spring.
 
