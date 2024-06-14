@@ -20,4 +20,5 @@ In this project:
 
 # Acknowledgements
 Pdf source for RAG: St Helen's Bishopsgate Church - https://www.st-helens.org.uk/resources/
+
 API for function calling: Newton API - https://github.com/aunyks/newton-api
