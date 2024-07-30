@@ -19,6 +19,6 @@ In this project:
 - Open the app on localhost:3000.
 
 # Acknowledgements
-Pdf source for RAG: St Helen's Bishopsgate Church - https://www.st-helens.org.uk/resources/
+Pdf source for RAG: Project Gutenberg - https://www.gutenberg.org/ebooks/36114
 
 API for function calling: Newton API - https://github.com/aunyks/newton-api
