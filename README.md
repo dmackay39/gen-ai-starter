@@ -18,5 +18,7 @@ In this project:
 - In terminal, cd to root folder and run docker compose up.
 - Open the app on localhost:3000.
 
-# Things to add
-- Sentiment analysis example.
+# Acknowledgements
+Pdf source for RAG: St Helen's Bishopsgate Church - https://www.st-helens.org.uk/resources/
+
+API for function calling: Newton API - https://github.com/aunyks/newton-api
