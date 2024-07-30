@@ -18,7 +18,7 @@ public class RAGController {
     }
 
     @GetMapping("/rag")
-    public AssistantMessage generate(@RequestParam(value= "message", defaultValue="Explain 1 Peter 1:1-12") String message){
+    public AssistantMessage generate(@RequestParam(value= "message", defaultValue="What is special relativity?") String message){
         return ragService.callModel(message);
     }
 

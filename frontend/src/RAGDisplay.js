@@ -36,7 +36,7 @@ const RAGDisplay = () => {
     <CardGroup>
       <Card>
         <Card.Body>
-          <Card.Title>This AI answers questions on 1 Peter. Ask a question below!</Card.Title>
+          <Card.Title>This AI answers questions on Einstein's relativity. Ask a question below!</Card.Title>
           <InputGroup className="mb-3">
             <Form.Control
             placeholder="Your question here"

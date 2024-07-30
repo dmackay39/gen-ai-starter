@@ -33,7 +33,7 @@ public class RAGService {
     @Value("classpath:/prompts/rag-system-prompt.st")
     private Resource ragResource;
 
-    @Value("classpath:/files/1PeterStudy.pdf")
+    @Value("classpath:/files/EinsteinRelativity.pdf")
     private Resource pdfResource;
 
     @Bean
